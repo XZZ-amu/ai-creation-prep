@@ -1,0 +1,24 @@
+# Claude Code 项目级配置（机器相关，不上传）
+.claude/settings.json
+.claude/settings.local.json
+
+# macOS
+.DS_Store
+
+# 实践产生的生成结果（图片/视频/模型，文件大，不版本控制）
+practice-outputs/
+*.png
+*.jpg
+*.jpeg
+*.mp4
+*.mov
+*.webp
+
+# 临时文件
+*.tmp
+*.log
+.vscode/
+.idea/
+
+# 本地调研缓存
+.cache/
