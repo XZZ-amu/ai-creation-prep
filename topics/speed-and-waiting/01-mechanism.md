@@ -302,3 +302,12 @@
 - HuggingFace diffusers 调度器对照表：<https://huggingface.co/docs/diffusers/api/schedulers/overview>
 - AnimateDiff motion adapter：<https://huggingface.co/guoyww/animatediff-motion-adapter-v1-5-2>
 - DPM-Solver 论文：Lu et al., "DPM-Solver: A Fast ODE Solver for Diffusion Probabilistic Model Sampling"，[arXiv:2206.00927](https://arxiv.org/abs/2206.00927)（未直接验证，引用为公认引文）
+
+---
+
+## 相关文档
+
+- → [算力成本](../compute-cost/01-mechanism.md)：速度优化的技术路径（蒸馏、量化、缓存）和成本优化高度重叠
+- → [生成质量与兜底](../quality-and-fallback/01-mechanism.md)：加速（少步数）和质量（多步数+后处理）是核心 tradeoff
+- → [迭代精准性](../iteration-precision/01-mechanism.md)：多轮迭代放大了等待问题——每轮都要重新等
+- → [意图理解](../intent-understanding/01-mechanism-v2.md)：LLM rewrite 环节本身也有延迟，是等待体验的第一段

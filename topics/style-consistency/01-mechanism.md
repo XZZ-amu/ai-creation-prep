@@ -428,3 +428,12 @@ ConsisID 是 DiT 视频模型（CogVideoX-5B）上的人脸一致性方案，核
 - **ConsisID GitHub**：https://github.com/PKU-YuanGroup/ConsisID （实现细节、49 帧 480×720、44GB → 5-7GB 优化）
 - **Wan 2.1 GitHub**（阿里通义，2025）：https://github.com/Wan-Video/Wan2.1 （I2V / FLF2V / VACE 多参考图条件、社区扩展 EchoShot/Phantom 等）
 - **Diffusers Reference-only Pipeline 文档**：https://huggingface.co/docs/diffusers/en/api/pipelines/stable_diffusion/stable_diffusion_reference （shared self-attention K/V、style_fidelity、reference_attn / reference_adain）
+
+---
+
+## 相关文档
+
+- → [意图理解](../intent-understanding/01-mechanism-v2.md)：风格手册（IP-Adapter/LoRA）在意图理解链路中的优先级位置
+- → [迭代精准性](../iteration-precision/01-mechanism.md)：Kontext 既是迭代工具也是风格保持工具，两篇互补
+- → [人脸与安全](../face-and-safety/01-mechanism.md)：人脸一致性是风格统一中精度要求最高的子问题
+- → [算力成本](../compute-cost/01-mechanism.md)：批量一致性方案（多 LoRA、StoryDiffusion）的显存/算力代价

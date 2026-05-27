@@ -377,3 +377,12 @@ img2img 流程：把原图编码到 latent → 加噪声到第 t 步（不是从
 - **FLUX.1 Kontext 模型卡**：https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev （12B 参数、guidance distillation、character/style reference）
 - **Step1X-Edit 论文**（阶跃星辰, 2025）：https://arxiv.org/abs/2504.17761 （Qwen-VL + DiT、token concat、11 类编辑任务、GEdit-Bench）
 - **FLUX.1 Fill**（Black Forest Labs）：https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev （DiT 时代 inpainting 模型）
+
+---
+
+## 相关文档
+
+- → [意图理解](../intent-understanding/01-mechanism-v2.md)：第一次生成的质量决定了需要多少轮迭代
+- → [风格统一](../style-consistency/01-mechanism.md)：迭代时保局部 vs 批量时保全局风格，用的是重叠技术栈（LoRA / Kontext）
+- → [生成质量与兜底](../quality-and-fallback/01-mechanism.md)：自动修补（修脸匠、修手匠）本质上就是一次隐式迭代
+- → [算力成本](../compute-cost/01-mechanism.md)：每多一轮迭代就多一次完整推理，成本线性叠加

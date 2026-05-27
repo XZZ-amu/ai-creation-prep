@@ -360,3 +360,12 @@ ComfyUI、Diffusers 都支持这些 trick。ComfyUI 的"smart memory management"
 
 **注**：DeepCache 的具体机制描述（UNet 浅层激活跨步缓存、降本 30-50%、对 DiT 适配差）来自训练记忆，未在本次 fetch 中验证；产品级数字（DAU、渗透率、单次 GPU·秒）全部为粗估，均标注待入职查实。
 
+---
+
+## 相关文档
+
+- → [生成速度与等待](../speed-and-waiting/01-mechanism.md)：速度优化和成本优化共享技术路径（蒸馏、量化、缓存）
+- → [生成质量与兜底](../quality-and-fallback/01-mechanism.md)：best-of-N 和后处理管线是成本的主要乘数
+- → [迭代精准性](../iteration-precision/01-mechanism.md)：每轮迭代 = 一次完整推理的成本
+- → [意图理解](../intent-understanding/01-mechanism-v2.md)：LLM rewrite + 双编码器链路本身占推理时间的前段
+

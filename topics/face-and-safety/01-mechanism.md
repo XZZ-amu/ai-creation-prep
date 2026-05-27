@@ -483,3 +483,12 @@ ConsisID 把人脸 embedding 拆成两段频率：
 - **Google SynthID-Text GitHub**：https://github.com/google-deepmind/synthid-text （文本水印参考实现、Bayesian/Mean detector、不保证 cryptographic security）
 - **InstantID 论文中关于 IP-Adapter 与 CLIP embedding 局限的论述**（"CLIP's inherent limitation lies in its training on weakly aligned data"）
 - **网信办深度合成规定 + 生成式 AI 暂行办法**：原文待查（域名限制无法直接 fetch）
+
+---
+
+## 相关文档
+
+- → [风格统一](../style-consistency/01-mechanism.md)：人脸一致性（InstantID/PuLID）是风格统一里精度最高的子问题
+- → [生成质量与兜底](../quality-and-fallback/01-mechanism.md)：修脸匠（CodeFormer）同时服务质量兜底和人脸保真
+- → [多模态对齐](../multimodal-alignment/01-mechanism.md)：音频驱动口型动画依赖人脸特征提取
+- → [算力成本](../compute-cost/01-mechanism.md)：人脸检测+安全审核管线的额外算力开销
