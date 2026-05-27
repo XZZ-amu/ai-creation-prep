@@ -22,3 +22,6 @@ practice-outputs/
 
 # 本地调研缓存
 .cache/
+
+# MkDocs 构建产物
+site/

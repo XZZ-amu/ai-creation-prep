@@ -1,0 +1,110 @@
+site_name: AI 创作准备
+site_description: 入职抖音 AI 创作特效团队前的领域知识储备
+site_author: guanyu.xiong
+site_url: https://xzz-amu.github.io/ai-creation-prep/
+
+# 仓库链接（页面右上角会显示 GitHub 图标）
+repo_url: https://github.com/XZZ-amu/ai-creation-prep
+repo_name: XZZ-amu/ai-creation-prep
+edit_uri: edit/main/
+
+# docs/ 目录里是软链接到根目录各 markdown 文件
+docs_dir: docs
+
+# 使用 Material 主题
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs              # 顶部 tab 导航
+    - navigation.tabs.sticky       # tab 滚动时保持可见
+    - navigation.sections          # 左侧栏分组
+    - navigation.expand            # 默认展开左侧导航
+    - navigation.top               # 回到顶部按钮
+    - navigation.indexes           # 章节首页
+    - toc.follow                   # 右侧目录跟随滚动
+    - search.suggest               # 搜索建议
+    - search.highlight             # 搜索结果高亮
+    - search.share                 # 搜索结果可分享
+    - content.code.copy            # 代码块复制按钮
+    - content.tabs.link            # 标签页联动
+  palette:
+    # 浅色主题
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换深色模式
+    # 深色主题
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换浅色模式
+  font:
+    text: Noto Sans SC
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+
+# Markdown 扩展
+markdown_extensions:
+  - admonition                     # 警告、提示框
+  - pymdownx.details               # 可折叠区块
+  - pymdownx.superfences           # 代码块增强
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde                 # ~~删除线~~
+  - pymdownx.mark                  # ==高亮==
+  - pymdownx.caret                 # ^^下划线^^
+  - tables                         # 表格
+  - footnotes                      # 脚注
+  - attr_list                      # 属性列表
+  - md_in_html                     # HTML 中嵌入 Markdown
+  - toc:
+      permalink: true              # 标题旁锚点链接
+      toc_depth: 3                 # 目录深度
+
+# 插件
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+# 导航结构
+nav:
+  - 首页: index.md
+  - 项目说明:
+    - 产品定位: product-foundation.md
+    - Topic 清单: topic-list.md
+    - 术语表: glossary.md
+  - 机制文档:
+    - 1. 意图理解: topics/intent-understanding/01-mechanism-v2.md
+    - 2. 迭代精准性: topics/iteration-precision/01-mechanism.md
+    - 3. 风格统一: topics/style-consistency/01-mechanism.md
+    - 5. 生成质量与兜底: topics/quality-and-fallback/01-mechanism.md
+    - 6. 生成速度与等待: topics/speed-and-waiting/01-mechanism.md
+    - 7. 多模态对齐: topics/multimodal-alignment/01-mechanism.md
+    - 8. 人脸与安全: topics/face-and-safety/01-mechanism.md
+    - 10. 算力成本: topics/compute-cost/01-mechanism.md
+
+# 额外配置
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/XZZ-amu/ai-creation-prep
+  generator: false                 # 不显示"Made with Material for MkDocs"
+
+# 版权
+copyright: 个人学习笔记，仅供参考
