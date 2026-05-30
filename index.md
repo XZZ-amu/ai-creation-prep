@@ -2,6 +2,20 @@
 
 入职抖音 AI 创作特效团队（产品设计师）前的领域知识储备。
 
+---
+
+## 五个核心判断（入职前必看）
+
+> 从 12 个 topic 的研究中提炼出的最高层结论。详见 [跨 Topic 洞察](insights/cross-topic-insights.md)。
+
+1. **用户不写 prompt** — 抖音用户和 Midjourney 用户本质不同。交互以"选模板 + 传素材"为基线，不以文字输入为基线。
+2. **混合方案是成本最优解** — AI 做一次理解/生成（花一次钱）+ 端侧渲染多次（免费）。每个特效设计时问"AI 的工作量能不能最小化"。
+3. **首次成功率是最高 ROI 指标** — 它同时降低成本、提升速度感知、减少迭代、提高发布率。连锁反应比任何单点优化都大。
+4. **竞争力在闭环短，不在生成强** — 抖音的优势是"从生成到社交奖励的闭环比别人短"（等待可被吸收、发布零跳转、链式反应在同一 App 内完成）。
+5. **社交奖励才是驱动力** — 用户为了"发出去被看见"用特效，不是为了"做好看的东西"。KPI 应该是"使用后发布率 × 发布后互动率"。
+
+---
+
 ## 当前进度
 
 | 阶段 | 说明 | 能力/机制类 | 产品命题类 |
@@ -13,43 +27,53 @@
 | ⑤ 动手实践 | 验证解法的真实表现 | 0/10 | 0/4 |
 | ⑥ 沉淀体感 | 我的看法 + 还没搞清楚的 | 0/10 | 0/4 |
 
-> 六步闭环详见 [CLAUDE.md 研究方法论](https://github.com/XZZ-amu/ai-creation-prep/blob/main/CLAUDE.md)
+---
+
+## 各 Topic 一句话结论
+
+### 能力 / 机制类
+
+| # | Topic | 抖音场景的核心判断 |
+|---|---|---|
+| 1 | [意图理解](topics/intent-understanding/04-douyin-take.md) | 输入是"选模板+传素材"不是写 prompt，失败时系统兜底不让用户改 |
+| 2 | [迭代精准性](topics/iteration-precision/04-douyin-take.md) | "不满意→换一个"覆盖 70% 需求，3 轮以内出片是产品边界 |
+| 3 | [风格统一](topics/style-consistency/04-douyin-take.md) | 弱需求，"差不多像"就够，零训练方案是唯一合理路径 |
+| 5 | [生成质量](topics/quality-and-fallback/04-douyin-take.md) | "好玩"比"精美"重要，75 分够用，后台 best-of-N 自动选最好 |
+| 6 | [生成速度](topics/speed-and-waiting/04-douyin-take.md) | 图片 <3 秒，视频异步但可"继续刷抖音"等通知 |
+| 7 | [多模态对齐](topics/multimodal-alignment/04-douyin-take.md) | 图→视频是第一优先级，冲突在模板层消灭 |
+| 8 | [人脸与安全](topics/face-and-safety/04-douyin-take.md) | 60-70% 像 + 风格惊喜，安全审核 <500ms 且用户无感 |
+| 10 | [算力成本](topics/compute-cost/04-douyin-take.md) | 图片可全量开放，视频必须限频，混合方案是最大杠杆 |
+
+### 产品命题类
+
+| # | Topic | 抖音场景的核心判断 |
+|---|---|---|
+| 11 | [低门槛差异化](topics/differentiation-at-low-barrier/04-douyin-take.md) | 用户素材（脸/环境/宠物）是零成本差异化来源 |
+| 12 | [Feed 吸引力](topics/feed-attractiveness/04-douyin-take.md) | 叙事钩子 > 纯视觉冲击，特效应内置故事结构 |
+| 13 | [发布转化](topics/publishing-conversion/04-douyin-take.md) | 一键发布 + AI 配文是最高 ROI 优化 |
+| 14 | [链式反应](topics/chain-reaction/04-douyin-take.md) | 低门槛 + 高辨识度 + 可变体 = 传播公式 |
 
 ---
 
-## 怎么读这份文档
+## 怎么读
 
-如果你是**第一次读**：建议从 **[1. 意图理解](topics/intent-understanding/01-mechanism-v2.md)** 开始——这一篇建立了贯穿全部文档的**画室五人组比喻体系**（翻译官、画家、草稿世界、骨架图、风格手册），后续文档全部沿用这套比喻。
+**快速了解**：看上面的五个核心判断 + 一句话结论表就够了。
 
-每个 topic 有三份文档：
+**深入某个 topic**：每个 topic 有四份文档——
 
-- **01-mechanism.md** — 机制：这件事的本质是什么
-- **02-problems.md** — 问题：常见失败模式和用户痛点
-- **03-solutions.md** — 解法：各家怎么解的、对比分析
+- **01-mechanism** — 这件事的本质是什么
+- **02-problems** — 常见失败模式和用户痛点
+- **03-solutions** — 各家怎么解的、对比分析
+- **04-douyin-take** — 在抖音特效场景下的产品判断
+
+**第一次读**：建议从 [意图理解的机制文档](topics/intent-understanding/01-mechanism-v2.md) 开始——它建立了贯穿全部文档的画室比喻体系。
 
 ---
 
-## 能力 / 机制类 Topic
+## 跨 Topic 洞察
 
-| # | Topic | 文档 |
-|---|---|---|
-| 1 | 意图理解 | [机制](topics/intent-understanding/01-mechanism-v2.md) · [问题](topics/intent-understanding/02-problems.md) · [解法](topics/intent-understanding/03-solutions.md) · [抖音判断](topics/intent-understanding/04-douyin-take.md) |
-| 2 | 迭代精准性 | [机制](topics/iteration-precision/01-mechanism.md) · [问题](topics/iteration-precision/02-problems.md) · [解法](topics/iteration-precision/03-solutions.md) · [抖音判断](topics/iteration-precision/04-douyin-take.md) |
-| 3 | 风格统一 | [机制](topics/style-consistency/01-mechanism.md) · [问题](topics/style-consistency/02-problems.md) · [解法](topics/style-consistency/03-solutions.md) · [抖音判断](topics/style-consistency/04-douyin-take.md) |
-| 5 | 生成质量与兜底 | [机制](topics/quality-and-fallback/01-mechanism.md) · [问题](topics/quality-and-fallback/02-problems.md) · [解法](topics/quality-and-fallback/03-solutions.md) · [抖音判断](topics/quality-and-fallback/04-douyin-take.md) |
-| 6 | 生成速度与等待 | [机制](topics/speed-and-waiting/01-mechanism.md) · [问题](topics/speed-and-waiting/02-problems.md) · [解法](topics/speed-and-waiting/03-solutions.md) · [抖音判断](topics/speed-and-waiting/04-douyin-take.md) |
-| 7 | 多模态对齐 | [机制](topics/multimodal-alignment/01-mechanism.md) · [问题](topics/multimodal-alignment/02-problems.md) · [解法](topics/multimodal-alignment/03-solutions.md) · [抖音判断](topics/multimodal-alignment/04-douyin-take.md) |
-| 8 | 人脸与安全 | [机制](topics/face-and-safety/01-mechanism.md) · [问题](topics/face-and-safety/02-problems.md) · [解法](topics/face-and-safety/03-solutions.md) · [抖音判断](topics/face-and-safety/04-douyin-take.md) |
-| 10 | 算力成本 | [机制](topics/compute-cost/01-mechanism.md) · [问题](topics/compute-cost/02-problems.md) · [解法](topics/compute-cost/03-solutions.md) · [抖音判断](topics/compute-cost/04-douyin-take.md) |
-
-## 产品命题类 Topic
-
-| # | Topic | 文档 |
-|---|---|---|
-| 11 | 低门槛下的差异化 | [机制](topics/differentiation-at-low-barrier/01-mechanism.md) · [问题](topics/differentiation-at-low-barrier/02-problems.md) · [解法](topics/differentiation-at-low-barrier/03-solutions.md) · [抖音判断](topics/differentiation-at-low-barrier/04-douyin-take.md) |
-| 12 | AI 内容在 feed 流的吸引力 | [机制](topics/feed-attractiveness/01-mechanism.md) · [问题](topics/feed-attractiveness/02-problems.md) · [解法](topics/feed-attractiveness/03-solutions.md) · [抖音判断](topics/feed-attractiveness/04-douyin-take.md) |
-| 13 | 创作终点与发布转化 | [机制](topics/publishing-conversion/01-mechanism.md) · [问题](topics/publishing-conversion/02-problems.md) · [解法](topics/publishing-conversion/03-solutions.md) · [抖音判断](topics/publishing-conversion/04-douyin-take.md) |
-| 14 | 社区的链式反应机制 | [机制](topics/chain-reaction/01-mechanism.md) · [问题](topics/chain-reaction/02-problems.md) · [解法](topics/chain-reaction/03-solutions.md) · [抖音判断](topics/chain-reaction/04-douyin-take.md) |
+- [跨 Topic 贯穿性结论](insights/cross-topic-insights.md) — 8 条横跨多个 topic 的元原则
+- [抖音特效技术架构](insights/douyin-effects-architecture.md) — 端侧 vs 云端的架构理解
 
 ---
 
@@ -58,3 +82,4 @@
 - [产品定位](product-foundation.md) — 抖音特效产品的本质和兄弟产品边界（所有判断的锚点）
 - [Topic 清单](topic-list.md) — 所有研究主题的状态
 - [术语表](glossary.md) — 核心术语一句话解释
+- [竞品观察](competitive/README.md) — 截图 + 结构化分析（持续采集中）

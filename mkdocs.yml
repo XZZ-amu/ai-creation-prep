@@ -150,6 +150,7 @@ nav:
     - 各家解法: topics/chain-reaction/03-solutions.md
     - 抖音判断: topics/chain-reaction/04-douyin-take.md
   - 跨 Topic 洞察:
+    - 贯穿性结论: insights/cross-topic-insights.md
     - 抖音特效技术架构: insights/douyin-effects-architecture.md
   - 竞品观察:
     - 说明: competitive/README.md
